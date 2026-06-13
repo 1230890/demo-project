@@ -5,7 +5,10 @@
   "private": true,
   "main": "index.html",
   "scripts": {
+    "_comment_start": "静态项目启动命令：使用 serve 在本地启动 HTTP 服务器，自动分配端口",
     "start": "npx serve .",
+    "_comment_format": "使用 prettier 格式化 assets/ 下所有 JS/CSS/HTML 文件及根目录 index.html",
+    "format": "prettier --write \"assets/**/*.{js,css,html}\" \"index.html\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -27,11 +30,5 @@
   "bugs": {
     "url": "https://github.com/1230890/demo-project/issues"
   },
-  "homepage": "https://github.com/1230890/demo-project#readme",
-  "dependencies": {
-    "lodash": "^4.18.1"
-  },
-  "devDependencies": {
-    "prettier": "^3.8.4"
-  }
+  "homepage": "https://github.com/1230890/demo-project#readme"
 }

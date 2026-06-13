@@ -1,73 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
+  <head>
     <!-- ===== 元数据 ===== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="个人欢迎页面 - 简约风格123">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人欢迎页面 - 简约风格123" />
     <title>欢迎 | Welcome</title>
 
     <!-- ===== 外部样式表 ===== -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <!-- ===== 页面主体：卡片式欢迎区域 ===== -->
     <main class="container">
-        <!-- 头像占位区域 —— 可替换为真实头像图片 -->
-        <div class="avatar" aria-label="用户头像">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="40" fill="#e2e8f0"/>
-                <circle cx="40" cy="32" r="14" fill="#94a3b8"/>
-                <ellipse cx="40" cy="68" rx="24" ry="14" fill="#94a3b8"/>
-            </svg>
-        </div>
+      <!-- 头像占位区域 —— 可替换为真实头像图片 -->
+      <div class="avatar" aria-label="用户头像">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#e2e8f0" />
+          <circle cx="40" cy="32" r="14" fill="#94a3b8" />
+          <ellipse cx="40" cy="68" rx="24" ry="14" fill="#94a3b8" />
+        </svg>
+      </div>
 
-        <!-- 欢迎文案 -->
-        <h1 class="greeting">你好，欢迎来访 👋</h1>
+      <!-- 欢迎文案 -->
+      <h1 class="greeting">你好，欢迎来访 👋</h1>
 
-        <!-- 个人简介 -->
-        <p class="intro">
-            我是一名热爱技术与设计的开发者，<br>
-            专注于创造简洁、优雅的数字化体验。
-        </p>
+      <!-- 个人简介 -->
+      <p class="intro">
+        我是一名热爱技术与设计的开发者，<br />
+        专注于创造简洁、优雅的数字化体验。
+      </p>
 
-        <!-- 技能 / 标签 -->
-        <div class="tags">
-            <span class="tag">前端开发</span>
-            <span class="tag">UI 设计</span>
-            <span class="tag">持续学习</span>
-        </div>
+      <!-- 技能 / 标签 -->
+      <div class="tags">
+        <span class="tag">前端开发</span>
+        <span class="tag">UI 设计</span>
+        <span class="tag">持续学习</span>
+      </div>
 
-        <!-- 社交链接 -->
-        <nav class="social-links" aria-label="社交链接">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
-                <!-- GitHub 图标（简化版） -->
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/>
-                </svg>
-                <span>GitHub</span>
-            </a>
-            <a href="mailto:example@email.com" class="social-link" title="邮箱">
-                <!-- 邮箱图标（简化版）111 -->
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-                <span>邮箱111</span>
-            </a>
-        </nav>
+      <!-- 社交链接 -->
+      <nav class="social-links" aria-label="社交链接">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          title="GitHub"
+        >
+          <!-- GitHub 图标（简化版） -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"
+            />
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:example@email.com" class="social-link" title="邮箱">
+          <!-- 邮箱图标（简化版）111 -->
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+          <span>邮箱111</span>
+        </a>
+      </nav>
     </main>
 
     <!-- ===== 页脚 ===== -->
     <footer class="footer">
-        <p>&copy; 2026 — 保留所有权利</p>
+      <p>&copy; 2026 — 保留所有权利</p>
     </footer>
 
     <!-- ===== 外部 JavaScript ===== -->
     <!-- 1. config.js 最先加载 —— 全局常量，业务脚本依赖它 -->
     <script src="assets/js/config.js"></script>
-    <!-- 2. 业务模块：计数器 → 待办清单 → 弹窗 -->
+    <!-- 2. 第三方库：lodash（为业务脚本提供工具方法） -->
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <!-- 3. 业务模块：计数器 → 待办清单 → 弹窗 -->
     <script src="assets/js/count.js"></script>
     <script src="assets/js/todo.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
