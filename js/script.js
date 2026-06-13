@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var decrementBtn = document.createElement('button');
     decrementBtn.textContent = '-1';
     decrementBtn.className = 'counter-btn';
+
+    // +1 按钮
+    var incrementBtn = document.createElement('button');
+    incrementBtn.textContent = '+1';
+    incrementBtn.className = 'counter-btn';
+
+    // -1 按钮：点击减少数字（最小为 0）
     decrementBtn.addEventListener('click', function () {
         if (counterValue > 0) {
             counterValue -= 1;
@@ -50,15 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // +1 按钮
-    var incrementBtn = document.createElement('button');
-    incrementBtn.textContent = '+1';
-    incrementBtn.className = 'counter-btn';
+    // +1 按钮：点击增加数字
     incrementBtn.addEventListener('click', function () {
         counterValue += 1;
         counterDisplay.textContent = counterValue;
     });
 
+    // 将按钮插入 DOM
     counterActions.appendChild(decrementBtn);
     counterActions.appendChild(incrementBtn);
     counterSection.appendChild(counterActions);
