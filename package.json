@@ -1,0 +1,37 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "一个简洁风格的个人欢迎页面 —— 纯前端静态项目，包含弹窗按钮、计数器和待办清单三个互动模块。",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "demo",
+    "welcome-page",
+    "counter",
+    "todo-list"
+  ],
+  "author": "demo",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1230890/demo-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1230890/demo-project/issues"
+  },
+  "homepage": "https://github.com/1230890/demo-project#readme",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.4"
+  }
+}

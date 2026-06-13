@@ -7,8 +7,8 @@
     <meta name="description" content="个人欢迎页面 - 简约风格123">
     <title>欢迎 | Welcome</title>
 
-    <!-- ===== 外部样式表（css/ 目录） ===== -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ===== 外部样式表 ===== -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- ===== 页面主体：卡片式欢迎区域 ===== -->
@@ -62,8 +62,12 @@
         <p>&copy; 2026 — 保留所有权利</p>
     </footer>
 
-    <!-- ===== 外部 JavaScript（js/ 目录） ===== -->
-    <script src="js/script.js"></script>
-    <script src="js/todo.js"></script>
+    <!-- ===== 外部 JavaScript ===== -->
+    <!-- 1. config.js 最先加载 —— 全局常量，业务脚本依赖它 -->
+    <script src="assets/js/config.js"></script>
+    <!-- 2. 业务模块：计数器 → 待办清单 → 弹窗 -->
+    <script src="assets/js/count.js"></script>
+    <script src="assets/js/todo.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
