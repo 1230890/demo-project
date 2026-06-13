@@ -1,0 +1,163 @@
+/* ============================================================
+   简约个人欢迎页面 —— 样式表
+   设计理念：留白、柔和的色调、微妙的圆角阴影
+   ============================================================ */
+
+/* ----- 全局重置 & 基础设置 ----- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* 颜色变量 —— 方便全局统一调整 */
+    --color-bg:        #f8fafc;
+    --color-surface:   #ffffff;
+    --color-text:      #1e293b;
+    --color-muted:     #64748b;
+    --color-primary:   #3b82f6;
+    --color-tag-bg:    #e0f2fe;
+    --color-tag-text:  #0369a1;
+    --color-border:    #e2e8f0;
+    --shadow-card:     0 4px 24px rgba(0, 0, 0, 0.06);
+    --radius-card:     16px;
+    --radius-tag:      999px;  /* 胶囊形状 */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei",
+                 sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+
+    /* 居中布局：让卡片始终在视口中央 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* ----- 卡片容器 ----- */
+.container {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: 3rem 2rem;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+
+    /* 入场动画：柔和上浮 */
+    animation: fadeUp 0.6s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----- 头像 ----- */
+.avatar {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color-border);
+}
+
+.avatar svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- 欢迎文案 ----- */
+.greeting {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+
+/* ----- 个人简介 ----- */
+.intro {
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    margin-bottom: 1.5rem;
+}
+
+/* ----- 技能标签 ----- */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    font-size: 0.85rem;
+    color: var(--color-tag-text);
+    background-color: var(--color-tag-bg);
+    border-radius: var(--radius-tag);
+    white-space: nowrap;
+}
+
+/* ----- 社交链接 ----- */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-link:hover {
+    color: var(--color-primary);
+}
+
+/* ----- 页脚 ----- */
+.footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    text-align: center;
+}
+
+/* ============================================================
+   响应式适配 —— 小屏幕下适当缩小内边距
+   ============================================================ */
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1.25rem;
+    }
+
+    .greeting {
+        font-size: 1.35rem;
+    }
+}
